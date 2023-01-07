@@ -10,7 +10,7 @@ function ModalBtn() {
 
   return (
     <>
-      <Button variant="success" onClick={handleShow}>
+      <Button variant="success" onClick={handleShow} className="mb-5">
        Get Started
       </Button>
 

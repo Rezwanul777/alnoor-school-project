@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
-import { Button, Container } from 'react-bootstrap';
+import React from 'react';
+import {Container} from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 
 import ModalBtn from './Modal';
 
-
-
 // feature silent image
 import feature from '../../../images/feature.jpg'
-
-
 
 const Feature = () => {
  
@@ -26,8 +22,9 @@ const Feature = () => {
                </div>
                <div className="col-12 col-lg-6 ">
 
-                  <h2 > <strong>We will provide this things to our stodents</strong>  </h2>
-                  <div className="py-3 me-3 ">
+                <div className='ms-5'>
+                <h2 > <strong>We will provide this things to our stodents</strong>  </h2>
+                  <div className="py-3">
                   
 
                         <p><Icon.ArrowRight size={30} style={{ 'color': "green" }} />Basic of Islam are taught and practiced in the school</p>
@@ -41,8 +38,7 @@ const Feature = () => {
                   <ModalBtn />
                   {/* <Button variant="outline-success">Get Started</Button> */}
                </div>
-
-      
+                </div>
             </div>
          </Container>
       </>
