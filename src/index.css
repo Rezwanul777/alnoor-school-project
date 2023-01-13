@@ -3,7 +3,8 @@
 *{
     margin: 0;
     padding: 0;
-     
+    box-sizing: border-box;
+  
 }
 body{
    font-family: 'Poppins', sans-serif;
@@ -18,6 +19,7 @@ body{
 }
 
 .card{
+  width: 90%;
   transition: .4s;
   border: 1px solid grey;
 }
@@ -30,4 +32,15 @@ body{
 .contact-form .card{
   box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2); 
  padding: 40px;
+}
+
+.col-lg-5{
+
+  background-color: #198754;
+  border-radius: 5px;
+  box-shadow: 2px 6px 5px gray;
+ 
+  padding: 20px;
+  color: white;
+
 }
