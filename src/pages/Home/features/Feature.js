@@ -12,11 +12,11 @@ const Feature = () => {
    return (
       <>
          <Container className='mt-5'>
-            <h1 className="text-center fw-bold fs-2 py-5">Our Salient Features</h1>
+            <h1 className="text-center text-success fw-bold fs-2 py-5">Our Salient Features</h1>
 
             <div className="row  gx-lg-5 d-flex justify-content-around align-items-center">
             <div className="col-12 col-lg-6">
-                  <div className="feature-img ">
+                  <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"  className="feature-img ">
                      <img src={feature} alt="" className='d-block w-100'/>
                   </div>
                </div>

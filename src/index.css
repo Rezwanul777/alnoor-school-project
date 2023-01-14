@@ -44,3 +44,15 @@ body{
   color: white;
 
 }
+
+footer{
+  padding:30px 0;
+  background-color:  rgb(4, 9, 30);
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+  color: #fff;
+ 
+  text-align: center;
+
+}

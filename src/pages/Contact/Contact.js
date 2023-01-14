@@ -1,7 +1,17 @@
 import React from 'react';
 import * as Icon from 'react-bootstrap-icons';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+  // Toast message
+  const showToastMessage = (event) => {
+    event.preventDefault()
+    toast.success('It will be Updated soon !', {
+        position: toast.POSITION.TOP_RIGHT
+      
+    });
+};
   return (
     <>
       <section className="contact-item py-5">
@@ -33,25 +43,16 @@ const Contact = () => {
                         </div>
                       </div>
                       <textarea name="" className="form-control mb-3" placeholder="Message"></textarea>
-                      <button className="btn btn-info btn-lg mt-3 text-bg-success">Submit</button>
+                      <button onClick={showToastMessage} className="btn btn-info btn-lg mt-3 text-bg-success">Submit</button>
                     </form>
+                    <ToastContainer />
                   </div>
+                 
                 </div>
               </div>
             </div>
-            {/* <div className="col-12 col-lg-6">
-          <div className="address-form mt-4">
-              <div className="card text-start border-0">
-                <div className="card-body">
-                  <h4 className="mb-4">location</h4>
-                  <p>Rahman Nagor, Bogura Sadar-5800,Bogura,Bangladesh</p>
-                  <p>Follow us</p>
-                  <span></span>
-                </div>
-              </div> */}
-            {/* </div>
-          </div>  */}
-
+            
+{/* // right part */}
             <div class="col-12 col-lg-5 ">
               <h4 className='py-3'>Location</h4><hr />
               <div class="mt-4">
@@ -69,7 +70,7 @@ const Contact = () => {
                 </div><hr />
                 <div class="d-flex">
 
-                  <p><Icon.Facebook className='mx-2' size={30} style={{ 'color': "white" }} /><a href="https://www.facebook.com/HafezQariRajibBinBorhan " style={{ "text-decoration":"none" }}><span style={{ 'color': "white" }}>
+                  <p><Icon.Facebook className='mx-2' size={30} style={{ 'color': "white" }} /><a href="https://www.facebook.com/HafezQariRajibBinBorhan " style={{ "text-decoration":"none" }}><span style={{ 'color': "white" ,"text":"hover"}}>
                   Facebook:Al Noor International School</span></a></p>
                 </div>
                 <hr />
@@ -78,7 +79,7 @@ const Contact = () => {
           </div>
 
         </div>
-
+        
       </section>
     </>
 
