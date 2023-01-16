@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is lived on -- (https://alnoor-school-app.netlify.app).
 
 ## History:
 The web-project is based on Islamic English Medium .The school mainly depends on donation.Many orphans are reading in school with Full-free.It has also residential facilities.
