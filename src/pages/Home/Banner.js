@@ -10,40 +10,40 @@ const Banner = () => {
      setIndex(selectedIndex);
    };
    return (
-      <div>
-         <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item interval={1000} >
-        <img
-          className="d-block w-100"
+      <div className="">
+        <Carousel activeIndex={index} onSelect={handleSelect} >
+      <Carousel.Item interval={1000} className="slider-section">
+      <img
+          className="d-block w-100 h-100vh"
           src={banner1}
-          alt="First slide"
+          alt="Second slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption  className="slider-text mb-5">
+          <h3 className="display-5">AL NOOR INTERNATIONAL SCHOOL</h3>
+          <p className="h4 mt-1">An English Medium,English Version & Arabic Institution</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item interval={1000} className="slider-section ">
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-100vh"
           src={banner2}
           alt="Second slide"
         />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <Carousel.Caption className="slider-text mb-5">
+          <h3 className="display-5">AL NOOR INTERNATIONAL SCHOOL</h3>
+          <p className="h4 mt-1">Play-Nursery-KG Cambridge & Noorani Curriculam along with International Arabic Education.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item className="slider-section">
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-100vh"
           src={banner3}
           alt="Third slide"
         />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+        <Carousel.Caption interval={500} className="slider-text mb-5">
+          <h3 className="display-5">AL NOOR INTERNATIONAL SCHOOL</h3>
+          <p className="h4 mt-1">
+            Enlish Version along with an effective combination of Ebtedayee,Dakhil and International Arabic Education.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

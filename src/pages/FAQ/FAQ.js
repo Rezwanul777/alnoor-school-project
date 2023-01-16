@@ -37,7 +37,7 @@ const FAQ = () => {
     </div>
             <div className='col-12 col-lg-6'>
                <div className="faq-side">
-                  <img src={faq} alt="img not found" className='img-fluid' />
+                  <img src={faq} alt="img not found" className='img-fluid rounded' />
                </div>
             </div>
           

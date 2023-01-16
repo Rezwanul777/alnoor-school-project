@@ -16,15 +16,15 @@ const Feature = () => {
 
             <div className="row  gx-lg-5 d-flex justify-content-around align-items-center">
             <div className="col-12 col-lg-6">
-                  <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"  className="feature-img ">
-                     <img src={feature} alt="" className='d-block w-100'/>
+                  <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"  className="feature-img ">
+                     <img src={feature} alt="" className='d-block w-100 rounded'/>
                   </div>
                </div>
                <div className="col-12 col-lg-6 ">
 
                 <div className='ms-5'>
-                <h2 > <strong>We will provide this things to our stodents</strong>  </h2>
-                  <div className="py-3">
+                <h2 className='h3 feature-title'> We will provide this things to our students</h2>
+                  <div className="py-3 feature-text">
                   
 
                         <p><Icon.ArrowRight size={30} style={{ 'color': "green" }} />Basic of Islam are taught and practiced in the school</p>

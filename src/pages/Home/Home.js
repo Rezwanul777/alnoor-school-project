@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Abouts from '../Abouts/Abouts';
 import Contact from '../Contact/Contact';
 import FAQ from '../FAQ/FAQ';
@@ -12,6 +13,7 @@ const Home = () => {
          <Banner/>
          <Feature/>
          <Abouts/>
+   
          <FAQ/>
          <Contact/>
          <Footer/>

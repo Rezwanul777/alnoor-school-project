@@ -53,8 +53,8 @@ const Contact = () => {
             </div>
             
 {/* // right part */}
-            <div class="col-12 col-lg-5 ">
-              <h4 className='py-3'>Location</h4><hr />
+            <div class="col-12 col-lg-5 mt-1">
+              <h4 className='py-3 mt-1'>Contact Details</h4><hr />
               <div class="mt-4">
                 <div class="d-flex">
 

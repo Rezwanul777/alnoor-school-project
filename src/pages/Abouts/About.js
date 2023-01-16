@@ -1,8 +1,11 @@
 import React from 'react';
 
+
 const About = ({man}) => {
-   const {img,name,title,text}=man
+   const {img,name,title,text}=man;
+   
    return (
+  
       <div className="col-xl-4 col-md-6 col-sm-6 mb-4 ">
       <div className="card mt-4 border-0 shadow" >
         <div className="row g-0">
@@ -20,8 +23,6 @@ const About = ({man}) => {
     </div>
     </div>
    
-  
-     
    );
 };
 

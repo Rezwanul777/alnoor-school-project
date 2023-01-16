@@ -10,7 +10,50 @@ body{
    font-family: 'Poppins', sans-serif;
    overflow-x: hidden;
 }
+/* navbar part */
+.nav-link{
+  color: rgb(50, 52, 52);
+}
 
+.nav-link::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color:#198754;
+  display: block;
+  transition: 0.5s;
+  margin: auto;
+
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Banner part */
+.slider-section{
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index:-1;
+}
+.slider-section::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  height: 100%;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  
+}
+.slider-text{
+  z-index:1;
+}
+
+/* about part */
 .about-part{
   background-color: #f7f9ff;
 }
@@ -29,6 +72,7 @@ body{
   box-shadow: 2px 6px 5px black; 
 }
 
+/* Contact part */
 .contact-form .card{
   box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2); 
  padding: 40px;
@@ -45,6 +89,7 @@ body{
 
 }
 
+/* Footer Part */
 footer{
   padding:30px 0;
   background-color:  rgb(4, 9, 30);
@@ -55,4 +100,87 @@ footer{
  
   text-align: center;
 
+}
+
+
+/*Responsive part*/
+
+@media only screen and (max-width:445px){
+  .nav-link::after{
+    display: none;
+  }
+
+  .slider-text h3{
+    display: none;
+  }
+  .slider-text p{
+    padding-top: 24px;
+    font-size: 16px;
+  }
+  .feature-title{
+    margin-top:10px;
+  }
+  .feature-text{
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width:576px){
+  .nav-link::after{
+    display: none;
+  }
+
+  .slider-text h3{
+    display: none;
+  }
+  .slider-text p{
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .feature-title{
+    margin-top:10px;
+  }
+  .feature-text{
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .nav-link::after{
+    display: none;
+  }
+
+  .slider-text h3{
+    display: none;
+  }
+  .slider-text p{
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .feature-title{
+    margin-top:10px;
+  }
+  .feature-text{
+    line-height: 16px;
+  }
+}
+
+@media only screen and (max-width:991px){
+  .nav-link::after{
+    display: none;
+  }
+
+  .slider-text h3{
+    display: none;
+  }
+  .slider-text p{
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .feature-title{
+    margin-top:10px;
+  }
+  .feature-text{
+    line-height: 16px;
+  }
 }
